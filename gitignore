@@ -1,0 +1,7 @@
+*~
+*.swp
+.lein-repl-history
+.DS_Store
+.classpath
+.project
+dump.rdb
