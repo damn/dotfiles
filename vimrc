@@ -150,3 +150,5 @@ set ts=2 sw=2 sts=2 et
 
 " Remove trailing spaces automagically.
 autocmd BufWritePre * :%s/\s\+$//e
+
+let g:clojure_align_subforms=1

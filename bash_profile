@@ -9,7 +9,7 @@ alias gs='git status'
 alias gd='git diff'
 
 alias cg='git checkout -- ../../../Gemfile.lock'
-alias sfr='ENV=development lein run'
+alias sfr='ENV=development lein do clean, run'
 
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
 
