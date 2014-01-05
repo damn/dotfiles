@@ -1,6 +1,7 @@
 call pathogen#infect()
 execute pathogen#infect()
 
+set paste
 set number
 set laststatus=2 " shows the status line, which shows the current file name
 
@@ -10,7 +11,7 @@ nmap <silent> <C-P> :cp<CR>zv
 
 nmap <F3> :vimgrep/<C-R><C-W>/g  **/*.clj ../../../test/sf_plus/test/**/**.clj
 nmap <F5> :vimgrep/<C-R><C-W>/g  src/**/*.clj test/**/*.clj
-nmap <F6> :vimgrep/<C-R><C-W>/g **/*.clj
+nmap <F6> :vimgrep/<C-R><C-W>/g  **/*.clj
 
 set cursorline
 set scrolloff=2 " 2 lines above and below cursor
@@ -152,3 +153,5 @@ set ts=2 sw=2 sts=2 et
 autocmd BufWritePre * :%s/\s\+$//e
 
 let g:clojure_align_subforms=1
+
+" autocmd FileType clojure setlocal cc=80
