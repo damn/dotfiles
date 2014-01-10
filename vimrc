@@ -9,6 +9,7 @@ set laststatus=2 " shows the status line, which shows the current file name
 nmap <silent> <C-N> :cn<CR>zv
 nmap <silent> <C-P> :cp<CR>zv
 
+nmap <F2> :noh
 nmap <F3> :vimgrep/<C-R><C-W>/g  **/*.clj ../../../test/sf_plus/test/**/**.clj
 nmap <F5> :vimgrep/<C-R><C-W>/g  src/**/*.clj test/**/*.clj
 nmap <F6> :vimgrep/<C-R><C-W>/g  **/*.clj
